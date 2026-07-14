@@ -12,4 +12,17 @@
 .legal-content h2 { margin-bottom:28px; }
 .legal-content h3 { margin:26px 0 5px; color:#24564d; font:500 1.25rem 'Playfair Display',serif; }
 .legal-content p { max-width:680px; color:#48625b; }
-@media(max-width:760px) { .services { grid-template-columns:1fr; padding:70px 28px; gap:30px; } .legal-links { margin-top:17px; } }
+.pricing { padding:105px max(8vw,28px); background:#fffdf9; }
+.pricing-heading { max-width:610px; text-align:center; margin:0 auto 42px; }
+.pricing-heading h2 { font:500 clamp(2.15rem,3.8vw,3.8rem)/1.08 'Playfair Display',serif; letter-spacing:-.04em; margin:0; }
+.pricing-heading p:last-child { color:#587067; }
+.price-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:1100px; margin:auto; }
+.price-card { display:flex; flex-direction:column; min-height:275px; padding:31px; border:1px solid #cbd6c9; color:#214e48; background:#f4f7ee; }
+.price-card p { margin:0; font-size:.9rem; font-weight:700; }
+.price-card strong { margin:22px 0 0; font:500 3.4rem/1 'Playfair Display',serif; }
+.price-card span { color:#61766d; font-size:.82rem; }
+.price-card.featured-price { color:#fff; border-color:#24564d; background:#24564d; }
+.price-card.featured-price span { color:#d9e8d3; }
+.price-link { margin-top:auto; padding:0; color:inherit; background:none; font-size:.82rem; text-decoration:underline; }
+.package-terms { max-width:760px; margin:26px auto 0; color:#62746c; text-align:center; font-size:.8rem; }
+@media(max-width:760px) { .services { grid-template-columns:1fr; padding:70px 28px; gap:30px; } .pricing { padding:70px 28px; } .price-grid { grid-template-columns:1fr; } .price-card { min-height:220px; } .legal-links { margin-top:17px; } }
